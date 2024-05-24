@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp4566779.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: transparent;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            color: white;
+        }
+        .form-control:focus {
+            border-color: #aaa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label, h2 {
+            color: white;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container input {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" action="formulario.php">
+            <h2>Formulario</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required><br><br>
+            <label for="apellido_paterno">Apellido Paterno:</label>
+            <input type="text" id="apellido_paterno" name="apellido_paterno" class="form-control" required><br><br>
+            <label for="apellido_materno">Apellido Materno:</label>
+            <input type="text" id="apellido_materno" name="apellido_materno" class="form-control" required><br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" class="form-control" required><br><br>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control" required><br><br>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" class="form-control" required><br><br>
+            <div class="button-container">
+                <input type="submit" name="submit" value="Enviar">
+                <button type="button" onclick="location.href='borrar.html'">Borrar</button>
+                <button type="button" onclick="location.href='consultar.html'">Consultar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

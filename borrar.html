@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Borrar Información</title>
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp4566779.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: transparent;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            color: white;
+        }
+        .form-control:focus {
+            border-color: #aaa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label, h2 {
+            color: white;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container input {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" action="borrar_procesar.php">
+            <h2>Borrar Información</h2>
+            <label><input type="checkbox" name="borrar[]" value="Nombre"> Nombre</label><br><br>
+            <label><input type="checkbox" name="borrar[]" value="apellido_paterno"> Apellido Paterno</label><br><br>
+            <label><input type="checkbox" name="borrar[]" value="apellido_materno"> Apellido Materno</label><br><br>
+            <label><input type="checkbox" name="borrar[]" value="Telefono"> Teléfono</label><br><br>
+            <label><input type="checkbox" name="borrar[]" value="Nacimiento"> Fecha de Nacimiento</label><br><br>
+            <label><input type="checkbox" name="borrar[]" value="Nacionalidad"> Nacionalidad</label><br><br>
+            <div class="button-container">
+                <input type="submit" value="Borrar Seleccionado">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
